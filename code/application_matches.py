@@ -6,6 +6,16 @@ mod = Module()
 apps = mod.apps
 
 # apple specific apps
+apps.daw = """
+os: mac
+and app.bundle: com.ableton.live
+"""
+
+apps.xcode = """
+os: mac
+and app.bundle: com.apple.dt.Xcode
+"""
+
 apps.datagrip = """
 os: mac
 and app.name: DataGrip
