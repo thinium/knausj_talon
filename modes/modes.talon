@@ -1,6 +1,14 @@
 #defines the various mode commands
 mode: all
 -
+solo mode:
+    mode.disable("command")
+    mode.enable("user.solo")
+    mode.disable("sleep")
+global mode:
+    mode.disable("user.solo")
+    mode.enable("command")
+    mode.disable("sleep")
 welcome back:
     user.mouse_wake()
     user.history_enable()
