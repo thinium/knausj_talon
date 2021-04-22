@@ -29,6 +29,16 @@ class Actions:
             actions.edit.extend_line_down()
         actions.edit.extend_line_end()
 
+    def delete_camel_left():
+        """Deletes camel/subword to the left"""
+        actions.user.extend_camel_left()
+        actions.edit.delete()
+
+    def delete_camel_right():
+        """Deletes camel/subword to the right"""
+        actions.user.extend_camel_right()
+        actions.edit.delete()
+
     def extend_camel_left():
         """Extends the selection by camel/subword to the left"""
 
