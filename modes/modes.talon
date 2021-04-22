@@ -1,10 +1,10 @@
 not mode: sleep
 -
-solo mode:
+^solo mode$:
     mode.disable("command")
     mode.enable("user.solo")
     mode.disable("sleep")
-global mode:
+^global mode$:
     mode.disable("user.solo")
     mode.enable("command")
     mode.disable("sleep")
