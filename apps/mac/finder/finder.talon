@@ -11,6 +11,7 @@ action(user.file_manager_go_forward):
 
 action(user.file_manager_go_back):
     key("cmd-[")
+open file: key(cmd-o)
 
 preferences: key(cmd-,)
 options: key(cmd-j) 
